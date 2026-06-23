@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ricespeak translate 2026 free legit</title><style>body{font-family:Arial,sans-serif;max-width:900px;margin:40px auto;padding:20px}textarea{width:100%;height:180px;box-sizing:border-box;margin-bottom:10px;resize:vertical}button{padding:10px 18px;cursor:pointer}</style></head><body><textarea id="i"placeholder="Talar Vekan"></textarea><button onclick="t()">Ricespeakar</button><textarea id="o"readonly placeholder="ricepeak output"></textarea><script>
+const d={"hello":"salvek","hi":"sal","goodbye":"norvek","yes":"va","no":"ren","i":"vek","you":"tal","we":"vekar","they":"novar","he":"tor","she":"sora","it":"ena","friend":"solan","house":"merak","food":"dran","water":"elin","fire":"varok","earth":"teran","sky":"avel","love":"selari","good":"varel","bad":"narek","where":"tora","what":"sena","who":"kera","why":"doran","when":"mela","is":"en","are":"enar","am":"en","have":"kor","has":"kor","go":"vena","come":"tala","see":"mira","know":"sel","want":"rava","the":"na","a":"ke","an":"ke","and":"sha","or":"vor","with":"kai","without":"nera","computer":"tekmar","phone":"veltek","car":"ronar","dog":"lunar","cat":"felar","man":"doran","woman":"selan","child":"minar","day":"sola","night":"nora","time":"vela","website":"netara","language":"ricespeak","translator":"ricespeakar"};
+
+const m=w=>w.toLowerCase().replace(/tion$/,"shar").replace(/ing$/,"ara").replace(/ed$/,"et").replace(/th/g,"z").replace(/ph/g,"f").replace(/qu/g,"kv").replace(/x/g,"ks").replace(/c/g,"k").replace(/oo/g,"u").replace(/ee/g,"i").replace(/ou/g,"au")+"a";
+
+const c=w=>d[w]||m(w);
+
+function t(){
+let x=document.getElementById("i").value;
+let r=x.split(/(\s+)/).map(p=>{
+if(/^\s+$/.test(p))return p;
+let m=p.match(/^([a-zA-Z']+)([^a-zA-Z']*)$/);
+return m?c(m[1])+m[2]:p;
+}).join("");
+document.getElementById("o").value=r;
+}
+</script></body></html>
