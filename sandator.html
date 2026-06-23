@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>sandator</title> 
+
+</head>
+
+<body>
+
+
+
+<script>
+
+(function () {
+
+
+
+    const map = {
+
+        a: "dag",
+
+        e: "deg",
+
+        i: "dig",
+
+        o: "dog",
+
+        u: "dug"
+
+    };
+
+
+
+    function encode(text) {
+
+        return text.replace(/[aeiouAEIOU]/g, (v) => {
+
+            const lower = v.toLowerCase();
+
+            const insert = map[lower];
+
+            return v + insert;
+
+        });
+
+    }
+
+
+
+    
+
+    function decode(text) {
+
+        return text.replace(/(a|e|i|o|u)(dag|deg|dig|dog|dug)/gi, "$1");
+
+    }
+
+
+
+    
+
+    const input = prompt("Enter text:");
+
+    const output = encode(input || "");
+
+
+
+    console.log("Encoded:", output);
+
+    alert(output);
+
+
+
+})();
+
+</script>
+
+
+
+</body>
+
+</html>
